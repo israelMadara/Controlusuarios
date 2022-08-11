@@ -1,0 +1,16 @@
+create database controlUsuarios;
+
+use controlUsuarios;
+
+create table usuario(
+id int(10) not null primary key auto_increment,
+nombre varchar(30) not null,
+email varchar(30) not null,
+genero varchar(30) not null,
+estatus boolean not null
+);
+
+
+insert usuario values(1,'Angel','aa@r.com','masculino',true);
+
+insert usuario values(null,'israel','aa@r.com','masculino',false);

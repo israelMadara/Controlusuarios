@@ -1,0 +1,16 @@
+package com.control.usuarios;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UsuariosServiceImp implements IUsuariosService{
+
+	@Override
+	public Page<Usuario> obtenerUsuarios(Pageable pegeRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

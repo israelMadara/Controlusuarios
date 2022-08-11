@@ -1,0 +1,13 @@
+package com.control.usuarios;
+
+import org.springframework.data.domain.*;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.data.*;
+@Repository
+public interface UsuariosRepository extends JpaRepository<Usuario, Integer> , CrudRepository<Usuario,Integer>{
+	Page<Usuario> findAll (Pageable pegeable);
+	
+     Usuario 
+	 
+}
