@@ -1,0 +1,43 @@
+
+<div class="container col-md-6">
+    <div class="card">
+         <div class="card-header">
+            <h3>Editar Usuario</h3>
+         </div>
+        <div class="card-body">
+            <form action="">
+                    <div class="form-group">
+                        <label for=""> Foto</label>
+                        <input type="file" class="form-control">
+                    </div>
+                 <!--   <div class="form-group">
+                        <label for=""> ID</label>
+                        <input type="text" [(ngModel)]="user.id" name="id" class="form-control">
+                    </div>
+                    -->
+                    <div class="form-group">
+                        <label for=""> Nombre</label>
+                        <input type="text" [(ngModel)]="user.nombre" name="nombre"  class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for=""> Email</label>
+                        <input type="text" [(ngModel)]="user.email" name="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for=""> Genero</label>
+                        <input type="text" [(ngModel)]="user.genero"  name="genero" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="">Estatus</label><br> 
+                        <select style="width: 300px;" class="custom-select custom-select-lg mb-3" name="estatus" [(ngModel)]="user.estatus" >
+                            <option  [value]="true" >true</option>
+                            <option [value]="false" >false</option>
+                        </select>
+                    </div>
+
+                    <button   (click)="guardar(user)" class="btn btn-danger" > Guardar Edicion </button>
+            </form>   
+        </div>
+    </div>
+</div>
